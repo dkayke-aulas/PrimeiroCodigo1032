@@ -1,0 +1,42 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-list {
+    min-width: 300px;
+    max-width: 800px;
+    min-height: 200px;
+    border-radius: 4px;
+    border: 1px solid blueviolet;
+    background-color: #1c1c1c;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: start;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.todo-list > input {
+    flex: 2;
+}
+
+.todo-list > button {
+    cursor: pointer;
+}
+
+.todo-list > input, .todo-list > button {
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.todo-list > input:hover, .todo-list > button:hover {
+    border-color: blue;
+}
+
+.todo-list > ol {
+    /* padding: 0; */
+    /* list-style: none; */
+    width: 100%;
+}
