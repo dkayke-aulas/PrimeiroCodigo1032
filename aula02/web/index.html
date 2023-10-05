@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+        const paragrafo1 = document.getElementById('banana')
+        // if(paragrafo1) {
+        //     paragrafo1.style.color = "blueviolet"
+        // }
+        paragrafo1 && (paragrafo1.style.color = "blueviolet")
+        console.log('esse é o primeiro script')
+        console.log(paragrafo1)
+        // window.alert('Olá mundo!')
+    </script>
+</head>
+<body>
+    
+    <p id="banana">Olá</p>
+    <h1 class="melancia">Olá</h1>
+    <span>Olá</span>
+
+    <script>
+        const paragrafo = document.getElementById('banana')
+        paragrafo.style.color = "blueviolet"
+        console.log('esse é o segundo script')
+        console.log(paragrafo)
+        // window.alert('Olá mundo!')
+    </script>
+</body>
+</html>
+
