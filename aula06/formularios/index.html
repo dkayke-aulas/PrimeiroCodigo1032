@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- <form action="https://www.w3schools.com/action_page.php" method="get" onsubmit="submeter()"> -->
+    <!-- <form method="get" onsubmit="submeter(); return false"> -->
+    <!-- <form method="get" name="milho"></form> -->
+
+    <form method="get" name="login_form" onsubmit="submeterFormDataLogin(); return false" >
+      <label for="usario"> Usuário</label>
+      <input name="usuario" id="usuario" type="text" />
+      
+      <label for="cpf"> CPF</label>
+      <input name="cpf" id="cpf" type="text" />
+      
+      <label for="email"> E-email</label>
+      <input name="email" id="email" type="email" />
+
+      <label for="senha">Senha</label>
+      <input name="senha" id="senha" type="password" />
+
+      <fieldset>
+        <input type="radio" id="salvar" name="salvar" value="sim" />
+        <label for="salvar">Salvar</label>
+
+        <input type="radio" id="nao-salvar" name="salvar" value="não" checked />
+        <label for="nao-salvar">Não salvar</label>
+      </fieldset>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </body>
+</html>
